@@ -14,6 +14,7 @@ class _FriendListState extends State<FriendList> {
 
   @override
   void dispose() {
+    friendsBloc.dispose();
     _textEditingController.dispose();
     super.dispose();
   }
